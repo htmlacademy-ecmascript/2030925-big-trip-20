@@ -1,6 +1,8 @@
+import { createElement } from '../../render';
+
 function editPointTemplate() {
-    return(
-        `<form class="event event--edit" action="#" method="post">
+  return(
+    `<form class="event event--edit" action="#" method="post">
         <header class="event__header">
           <div class="event__type-wrapper">
             <label class="event__type  event__type-btn" for="event-type-toggle-1">
@@ -153,19 +155,21 @@ function editPointTemplate() {
           </section>
         </section>
       </form>`
-    );
+  );
 }
 
 export default class EditPointView {
-    getTemplate() {
-        return editPointTemplate();
+  getTemplate() {
+    return editPointTemplate();
+  }
+
+  getElement() {
+    if(!this.element) {
+      this.element = createElement(this.getTemplate);
     }
-    getElement() {
-        if(!this.element) {
-            this.element = createElement(this.getTemplate);
-        }
-    }
-    removeElement() {
-        this.element = null;
-    }
+  }
+
+  removeElement() {
+    this.element = null;
+  }
 }

@@ -1,6 +1,8 @@
+import { createElement } from '../../render';
+
 function filterTemplate() {
-    return(
-        `<div class="trip-main__trip-controls  trip-controls">
+  return(
+    `<div class="trip-main__trip-controls  trip-controls">
         <div class="trip-controls__filters">
           <h2 class="visually-hidden">Filter events</h2>
           <form class="trip-filters" action="#" method="get">
@@ -28,19 +30,21 @@ function filterTemplate() {
           </form>
         </div>
       </div>`
-    );
+  );
 }
 
 export default class FilterView {
-    getTemplate() {
-        return filterTemplate();
+  getTemplate() {
+    return filterTemplate();
+  }
+
+  getElement() {
+    if(!this.element) {
+      this.element = createElement(this.getTemplate);
     }
-    getElement() {
-        if(!this.element) {
-            this.element = createElement(this.getTemplate);
-        }
-    }
-    removeElement() {
-        this.element = null;
-    }
+  }
+
+  removeElement() {
+    this.element = null;
+  }
 }

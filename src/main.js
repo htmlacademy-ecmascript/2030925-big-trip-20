@@ -1,5 +1,7 @@
-import CreateNewEventButtonView from "./view/create-event-button-view/create-event-button-view";
-import FilterView from "./view/filter-list-view/filter-list-view";
+import CreateNewEventButtonView from './view/create-event-button-view/create-event-button-view';
+import FilterView from './view/filter-list-view/filter-list-view';
+import PagePresenter from './presenter/page-presenter';
+import render from './render';
 
 const siteMainElement = document.querySelector('.main');
 const siteHeaderElement = siteMainElement.querySelector('.main__control');
