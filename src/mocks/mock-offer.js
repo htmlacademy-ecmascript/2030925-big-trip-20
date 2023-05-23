@@ -1,10 +1,10 @@
-import { DESCTIPTIONS, EVENTS_TYPE, PRICES } from "../consts/const";
-import { getRandomArrayElement, getRandomNumber } from "../consts/utils.js/utils";
+import { EVENTS_TYPE, PRICES, TITLES } from '../const';
+import { getRandomArrayElement } from '../utils';
 
 export const mockOffer = [
-    {
-        offerType: getRandomArrayElement(EVENTS_TYPE),
-        offerTitle: getRandomArrayElement(DESCTIPTIONS),
-        offerPrice: PRICES
-    }
+  {
+    offerType: getRandomArrayElement(EVENTS_TYPE),
+    offerTitle: getRandomArrayElement(TITLES),
+    offerPrice: PRICES
+  }
 ];
