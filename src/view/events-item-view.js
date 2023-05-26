@@ -1,7 +1,7 @@
 import { createElement } from '../render';
 
 function eventsItemTemplate(event) {
-  const {eventType,price,eventDestination,eventStart,eventEnd,offers} = event;
+  const {eventType,price,eventDestination,dateFrom,dateTo,offers} = event;
   return(
     `<li class="trip-events__item">
         <div class="event">
@@ -12,9 +12,9 @@ function eventsItemTemplate(event) {
           <h3 class="event__title">${eventType} ${eventDestination.city}</h3>
           <div class="event__schedule">
             <p class="event__time">
-              <time class="event__start-time" datetime=${eventStart}>10:30</time>
+              <time class="event__start-time" datetime=${dateFrom}>10:30</time>
               &mdash;
-              <time class="event__end-time" datetime=${eventEnd}>11:00</time>
+              <time class="event__end-time" datetime=${dateTo}>11:00</time>
             </p>
             <p class="event__duration">30M</p>
           </div>

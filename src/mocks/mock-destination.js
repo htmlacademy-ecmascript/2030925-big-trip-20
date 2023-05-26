@@ -6,31 +6,46 @@ export const mockDestination = [
     id: 1,
     description: getRandomArrayElement(DESCTIPTIONS),
     city: getRandomArrayElement(CITIES),
-    images: PHOTOS
+    images: {
+      src: PHOTOS,
+      description: getRandomArrayElement(DESCTIPTIONS)
+    }
   },
   {
     id: 2,
     description: getRandomArrayElement(DESCTIPTIONS),
     city: getRandomArrayElement(CITIES),
-    images: PHOTOS
+    images: {
+      src: PHOTOS,
+      description: getRandomArrayElement(DESCTIPTIONS)
+    }
   },
   {
     id: 3,
     description: getRandomArrayElement(DESCTIPTIONS),
     city: getRandomArrayElement(CITIES),
-    images: PHOTOS
+    images: {
+      src: PHOTOS,
+      description: getRandomArrayElement(DESCTIPTIONS)
+    }
   },
   {
     id: 4,
     description: getRandomArrayElement(DESCTIPTIONS),
     city: getRandomArrayElement(CITIES),
-    images: PHOTOS
+    images: {
+      src: PHOTOS,
+      description: getRandomArrayElement(DESCTIPTIONS)
+    }
   },
   {
     id: 5,
     description: getRandomArrayElement(DESCTIPTIONS),
     city: getRandomArrayElement(CITIES),
-    images: PHOTOS
+    images: {
+      src: PHOTOS,
+      description: getRandomArrayElement(DESCTIPTIONS)
+    }
   },
 ];
 
