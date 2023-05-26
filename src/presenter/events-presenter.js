@@ -1,4 +1,3 @@
-
 import EditPointView from '../view/edit-point-view';
 import EventsItemView from '../view/events-item-view';
 import EventsListView from '../view/events-list-view';
@@ -8,17 +7,20 @@ import { render } from '../render';
 export default class EventsPresenter {
   eventsListComponent = new EventsListView();
 
-  constructor({eventContainer}) {
+  constructor({eventContainer,pointsModel}) {
     this.eventContainer = eventContainer;
+    this.pointsModel = pointsModel;
   }
 
   init () {
+    this.eventPoints = this.pointsModel.getPoints();
+
     render(new SortListView(), this.eventContainer);
     render(this.eventsListComponent, this.eventContainer);
     render(new EditPointView(), this.eventsListComponent.getElement());
 
-    for(let i = 0; i < 3 ; i++) {
-      render( new EventsItemView(), this.eventsListComponent.getElement());
+    for(let i = 1; i < this.eventPoints.length ; i++) {
+      render( new EventsItemView({point: this.eventPoints[i]}), this.eventsListComponent.getElement());
     }
   }
 }

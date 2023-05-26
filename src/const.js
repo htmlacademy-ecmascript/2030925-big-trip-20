@@ -4,6 +4,10 @@ export const EVENTS_TYPE = ['Taxi', 'Bus', 'Train', 'Ship', 'Drive', 'Flight', '
 
 export const EVENTS_COUNT = 5;
 
+export const SORT_LIST = ['Day', 'Price', 'Offers', 'Event', 'Price'];
+
+export const FILTERS = ['Everything', 'Future', 'Present', 'Past', 'Accept filter'];
+
 export const DESCTIPTIONS = [
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   'Cras aliquet varius magna, non porta ligula feugiat eget.',
@@ -20,3 +24,6 @@ export const PHOTOS = `https://loremflickr.com/248/152?random=${getRandomNumber(
 
 export const PRICES = getRandomNumber(10,50);
 
+export const DATE_FORMAT = 'D MMM';
+
+export const TIME_FORMAT = 'HH:mm';

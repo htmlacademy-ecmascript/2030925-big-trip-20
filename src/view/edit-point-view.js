@@ -1,8 +1,11 @@
+import { DATE_FORMAT } from '../const';
 import { mockDestination } from '../mocks/mock-destination';
 import { createElement } from '../render';
+import { humanizeEventDate } from '../utils';
 
 function editPointTemplate(event) {
   const {price,eventDestination,eventStart,eventEnd,offers} = event;
+
   return(
     `<li class="trip-events__item">
       <form class="event event--edit" action="#" method="post">
