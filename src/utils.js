@@ -1,5 +1,5 @@
-import dayjs from "dayjs";
-import { DATE_FORMAT, TIME_FORMAT } from "./const";
+import dayjs from 'dayjs';
+import { DATE_FORMAT, TIME_FORMAT } from './const';
 
 export function getRandomArrayElement(items) {
   return items[Math.floor(Math.random() * items.length)];

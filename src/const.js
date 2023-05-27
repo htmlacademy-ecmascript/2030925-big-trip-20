@@ -27,3 +27,5 @@ export const PRICES = getRandomNumber(10,50);
 export const DATE_FORMAT = 'D MMM';
 
 export const TIME_FORMAT = 'HH:mm';
+
+export const EVENT_DATE_FORMAT = 'DD/MM/YY mm:ss';

@@ -8,39 +8,39 @@ export const mockOffer = [
       id: 1,
       offerTitle: getRandomArrayElement(TITLES),
       offerPrice: PRICES
-  }
+    }
   },
   {
     offerType: getRandomArrayElement(EVENTS_TYPE),
     offers: {
-      id: 1,
+      id: 2,
       offerTitle: getRandomArrayElement(TITLES),
       offerPrice: PRICES
-  }
+    }
   },
   {
     offerType: getRandomArrayElement(EVENTS_TYPE),
     offers: {
-      id: 1,
+      id: 3,
       offerTitle: getRandomArrayElement(TITLES),
       offerPrice: PRICES
-  }
+    }
   },
   {
     offerType: getRandomArrayElement(EVENTS_TYPE),
     offers: {
-      id: 1,
+      id: 4,
       offerTitle: getRandomArrayElement(TITLES),
       offerPrice: PRICES
-  }
+    }
   },
   {
     offerType: getRandomArrayElement(EVENTS_TYPE),
     offers: {
-      id: 1,
+      id: 5,
       offerTitle: getRandomArrayElement(TITLES),
       offerPrice: PRICES
-  }
+    }
   },
 ];
 
