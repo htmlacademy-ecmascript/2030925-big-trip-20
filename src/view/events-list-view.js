@@ -1,8 +1,8 @@
-import { createElement } from '../../render';
+import { createElement } from '../render';
 
 function eventsListTemplate() {
   return(
-    '<section class="trip-events"> </section>'
+    '<ul class="trip-events__list"></ul>'
   );
 }
 
@@ -13,8 +13,9 @@ export default class EventsListView {
 
   getElement() {
     if(!this.element) {
-      this.element = createElement(this.getTemplate);
+      this.element = createElement(this.getTemplate());
     }
+    return this.element;
   }
 
   removeElement() {
