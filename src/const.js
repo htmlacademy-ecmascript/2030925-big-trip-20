@@ -24,8 +24,18 @@ export const PHOTOS = `https://loremflickr.com/248/152?random=${getRandomNumber(
 
 export const PRICES = getRandomNumber(10,50);
 
-export const DATE_FORMAT = 'D MMM';
+export const DATE_FORMAT = 'MMM D';
 
 export const TIME_FORMAT = 'HH:mm';
 
-export const EVENT_DATE_FORMAT = 'DD/MM/YY mm:ss';
+export const FULL_DATE_FORMAT = 'YY/MM/DD HH:mm';
+
+export const TIME_DIFFERENCE_MIN = 'mm[m]';
+
+export const TIME_DIFFERENCE_HOUR_MIN = 'HH[h] mm[m]';
+
+export const TIME_DIFFERENCE_DAY_HOUR_MIN = 'DD[d] HH[h] mm[m]';
+
+export const MS_IN_HOUR = 3600000;
+
+export const MS_IN_DAY = 86400000;

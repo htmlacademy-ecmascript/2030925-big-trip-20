@@ -4,7 +4,7 @@ import { getRandomArrayElement } from '../utils';
 export const mockOffer = [
   {
     offerType: getRandomArrayElement(EVENTS_TYPE),
-    offers: {
+    offer: {
       id: 1,
       offerTitle: getRandomArrayElement(TITLES),
       offerPrice: PRICES
@@ -12,7 +12,7 @@ export const mockOffer = [
   },
   {
     offerType: getRandomArrayElement(EVENTS_TYPE),
-    offers: {
+    offer: {
       id: 2,
       offerTitle: getRandomArrayElement(TITLES),
       offerPrice: PRICES
@@ -20,7 +20,7 @@ export const mockOffer = [
   },
   {
     offerType: getRandomArrayElement(EVENTS_TYPE),
-    offers: {
+    offer: {
       id: 3,
       offerTitle: getRandomArrayElement(TITLES),
       offerPrice: PRICES
@@ -28,7 +28,7 @@ export const mockOffer = [
   },
   {
     offerType: getRandomArrayElement(EVENTS_TYPE),
-    offers: {
+    offer: {
       id: 4,
       offerTitle: getRandomArrayElement(TITLES),
       offerPrice: PRICES
@@ -36,7 +36,7 @@ export const mockOffer = [
   },
   {
     offerType: getRandomArrayElement(EVENTS_TYPE),
-    offers: {
+    offer: {
       id: 5,
       offerTitle: getRandomArrayElement(TITLES),
       offerPrice: PRICES
@@ -45,5 +45,5 @@ export const mockOffer = [
 ];
 
 export function getRandomMockOffer() {
-  getRandomArrayElement(mockOffer);
+  return getRandomArrayElement(mockOffer);
 }

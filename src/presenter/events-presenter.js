@@ -13,16 +13,16 @@ export default class EventsPresenter {
   }
 
   init () {
-    this.eventPoints = [...this.eventsModel.getPoints()];
+    this.eventPoints = [...this.eventsModel.getEvents()];
     this.eventOffers = [...this.eventsModel.getOffers()];
     this.eventDestinations = [...this.eventsModel.getDestinations()];
 
     render(new SortListView(), this.eventContainer);
     render(this.eventsListComponent, this.eventContainer);
-    render(new EditPointView(), this.eventsListComponent.getElement());
+    render(new EditPointView({event: this.eventPoints[0], offers: this.eventOffers, destinations: this.eventDestinations}), this.eventsListComponent.getElement());
 
     for(let i = 1; i < this.eventPoints.length ; i++) {
-      render(new EventsItemView({point: this.eventPoints[i], offers: this.eventOffers, destinations: this.destinations}), this.eventsListComponent.getElement());
+      render(new EventsItemView({event: this.eventPoints[i], offers: this.eventOffers, destinations: this.eventDestinations}), this.eventsListComponent.getElement());
     }
   }
 }

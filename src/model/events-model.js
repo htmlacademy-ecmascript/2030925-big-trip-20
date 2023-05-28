@@ -4,19 +4,19 @@ import { getRandomEvents } from '../mocks/mock-events';
 import { mockOffer } from '../mocks/mock-offer';
 
 export default class EventsModel {
-  points = Array.from({length: EVENTS_COUNT}, getRandomEvents);
-  offers = mockOffer;
+  events = Array.from({length: EVENTS_COUNT}, getRandomEvents);
   destinations = mockDestination;
+  offers = mockOffer;
 
-  getPoints() {
-    return this.points;
-  }
-
-  getOffers() {
-    return this.offers;
+  getEvents() {
+    return this.events;
   }
 
   getDestinations() {
     return this.destinations;
+  }
+
+  getOffers() {
+    return this.offers;
   }
 }
